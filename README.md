@@ -17,28 +17,37 @@
 2. 코드의 작동 방식에 대한 개선 방법을 주석으로 기록합니다.
 3. 참고한 링크 및 ChatGPT 프롬프트 명령어가 있다면 주석으로 남겨주세요.
 ```python
-# 사칙 연산 계산기
-class calculator:
-    # 예) init의 역할과 각 매서드의 의미를 서술
-    def __init__(self, first, second):
-        self.first = first
-        self.second = second
-    
-    # 예) 덧셈과 연산 작동 방식에 대한 서술
-    def add(self):
-        result = self.first + self.second
-        return result
+# 회문인지 아닌지 확인하는 프로그램
 
-a = float(input('첫번째 값을 입력하세요.')) 
-b = float(input('두번째 값을 입력하세요.')) 
-c = calculator(a, b)
-print('덧셈', c.add()) 
+#박동원 작성
+word=str(input()) //입력받은 값을 string으로 word에 저장
+a = list(word)  //입력받은 워드를 리스트화
+while i in range(len(a)): //워드의 길이만큼 반복
+    if a[i]!=a[-1-i]: //리스트의 내용과 뒤집은 내용이 같지 않다면 실행
+       print('회문이 아닙니다')
+    else: //리스트와 뒤집은 내용이 같다면 실행
+       print('회문이 맞습니다')
+    break
+
+
+# 박기용 작성 
+# 전체 단어 확인.
+
+word=str(input()) //입력받은 값을 string으로 word에 저장
+a = list(word) //word 에 입력받은 내용을 a리스트에 저장
+b = [] // b라는 빈 리스트 생성
+for i in range(len(a)): // 리스트화 시킨 a의 리스트 수를 가져와 그만큼 반복
+  b.append(a[-1-i]) // 빈 리스트 b에 a리스트를 거꾸로 추가
+print(b) //반복문을 마친 후 b를 출력
+if a == b: //a와 b가 같다면 출력
+  print (f'뒤집힌 단어는: {word}는 입력된 단어는 회문입니다.')
+else: //그렇지 않다면 출력
+  print(f'뒤집힌 단어는: {word}는 입력된 단어는 회문이 아닙니다')
 ```
 
 # 참고 링크 및 코드 개선 여부
 ```python
 #
-#
-#
+#x
 #
 ```
