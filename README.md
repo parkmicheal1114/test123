@@ -1,5 +1,5 @@
 # Code Peer Review Templete
-- 코더 : 박기용, 박동원
+- 코더 : 박기용님, 박동원님
 - 리뷰어 : 김영원
 
 
@@ -20,6 +20,7 @@
 # 회문인지 아닌지 확인하는 프로그램
 
 #박동원 작성
+
 word=str(input()) //입력받은 값을 string으로 word에 저장
 a = list(word)  //입력받은 워드를 리스트화
 while i in range(len(a)): //워드의 길이만큼 반복
